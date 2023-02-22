@@ -5,7 +5,7 @@
       "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Venda",
-      "price": "14000",
+      "price": 14000,
       "createAt": "2023-02-22T11:31:06.491Z"
     },
     {
@@ -13,8 +13,16 @@
       "description": "Hamburger",
       "type": "outcome",
       "category": "Alimentação",
-      "price": "39",
+      "price": 29,
       "createAt": "2023-02-22T11:26:06.491Z"
+    },
+    {
+      "id": 3,
+      "description": "Curso CS50x",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1500,
+      "createAt": "2023-01-17T11:20:06.491Z"
     }
   ]
 }

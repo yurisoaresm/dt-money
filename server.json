@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createAt": "2023-02-22T11:31:06.491Z"
+      "createdAt": "2023-02-22T11:31:06.491Z"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 29,
-      "createAt": "2023-02-22T11:26:06.491Z"
+      "createdAt": "2023-02-22T11:26:06.491Z"
     },
     {
       "id": 3,
@@ -22,7 +22,23 @@
       "type": "outcome",
       "category": "Educação",
       "price": 1500,
-      "createAt": "2023-01-17T11:20:06.491Z"
+      "createdAt": "2023-01-17T11:20:06.491Z"
+    },
+    {
+      "description": "Desenvolvimento de App",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-02-23T17:42:47.972Z",
+      "id": 4
+    },
+    {
+      "description": "Pastel e Caldo de Cana",
+      "price": 13,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-02-23T17:59:08.838Z",
+      "id": 5
     }
   ]
 }

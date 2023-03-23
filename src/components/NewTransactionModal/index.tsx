@@ -5,13 +5,7 @@ import { Controller, useForm } from 'react-hook-form'
 import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 
-import {
-  CloseButton,
-  Content,
-  Overlay,
-  TransactionType,
-  TransactionTypeButton,
-} from './styles'
+import * as S from './styles'
 
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 
@@ -60,14 +54,14 @@ export function NewTransactionModal() {
 
   return (
     <Dialog.Portal>
-      <Overlay />
+      <S.Overlay />
 
-      <Content>
+      <S.Content>
         <Dialog.Title>Nova Transação</Dialog.Title>
 
-        <CloseButton>
+        <S.CloseButton>
           <X size={24} />
-        </CloseButton>
+        </S.CloseButton>
 
         <form onSubmit={handleSubmit(hanldeCreateNewTransaction)}>
           <input
@@ -94,20 +88,20 @@ export function NewTransactionModal() {
             name="type"
             render={({ field }) => {
               return (
-                <TransactionType
+                <S.TransactionType
                   onValueChange={field.onChange}
                   value={field.value}
                 >
-                  <TransactionTypeButton variant="income" value="income">
+                  <S.TransactionTypeButton variant="income" value="income">
                     <ArrowCircleUp size={24} />
                     Entrada
-                  </TransactionTypeButton>
+                  </S.TransactionTypeButton>
 
-                  <TransactionTypeButton variant="outcome" value="outcome">
+                  <S.TransactionTypeButton variant="outcome" value="outcome">
                     <ArrowCircleDown size={24} />
                     Saída
-                  </TransactionTypeButton>
-                </TransactionType>
+                  </S.TransactionTypeButton>
+                </S.TransactionType>
               )
             }}
           />
@@ -116,7 +110,7 @@ export function NewTransactionModal() {
             Cadastrar
           </button>
         </form>
-      </Content>
+      </S.Content>
     </Dialog.Portal>
   )
 }

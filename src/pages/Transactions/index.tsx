@@ -1,7 +1,7 @@
 import { useContextSelector } from 'use-context-selector'
 
-import { Header } from '../../components/Header'
-import { Summary } from '../../components/Summary'
+import { Header, Summary } from '../../components'
+
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 import { SearchForm } from './components/SearchForm'
 import { dateFormatter, priceFormatter } from '../../utils/formatter'
